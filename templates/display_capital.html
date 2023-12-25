@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display capitals</h1>
+        <table border="10px">
+            <tr>
+                <th>Capital_id</th>
+                <th>Capital_name</th>
+                <th>cid</th>
+            </tr>
+        {% for co in QLCPO %}
+            <tr>
+                <td>{{co.capital_id}}</td>
+                <td>{{co.capital_name}}</td>
+                <td>{{co.cid}}</td>
+            </tr>
+        {% endfor %}
+
+        </table>
+    </center>
+    
+</body>
+</html>
